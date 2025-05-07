@@ -5,10 +5,15 @@ import os
 
 arr=[]
 
-for i in range(0, 1000):
-    arr.append(r.randint(1, 1000))
+b = int(input("list amount? "))
+c = int(input("list range? "))
+
+for i in range(0, b):
+    arr.append(r.randint(1, c))
 
 print(arr)
+
+a = int(input("print after pass (1) or after swap (2)"))
 
 def bubble(array):
     swaps = 0
@@ -23,15 +28,18 @@ def bubble(array):
                 array[i] = array[i+1]
                 array[i+1] = holder
                 swaps += 1
-                os.system("clear")
-                print(array)
+                if a == 2:
+                    os.system("clear")
+                    print(array)
         elif i == length:
+            os.system("clear")
+            print(array)
             i = 0
             if swaps == a:
                 break
             a = swaps
             continue
-        #time.sleep(0.01)
+        #time.sleep(0.05)
         i+=1
     print(array)
     print(swaps)
