@@ -52,3 +52,13 @@ def insertion(array):
 
 
 print(insertion(arr))
+
+#length = int(input("array length? "))
+
+#carr = []
+
+#for i in range(0, length):
+#    carr.append(input("> "))
+
+#for i in range(0, carr):
+#    carr[i] = chr(carr[i])
